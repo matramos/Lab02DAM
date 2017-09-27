@@ -96,6 +96,12 @@
             android:text="Reiniciar" />
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/textRB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
     <ListView
         android:id="@+id/lvelementos"
         android:layout_width="match_parent"

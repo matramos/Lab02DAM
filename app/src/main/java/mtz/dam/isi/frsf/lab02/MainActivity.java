@@ -17,10 +17,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         rdgGrupo = (RadioGroup)findViewById(R.id.menuradio);
+        lblChecked = (TextView)findViewById(R.id.textRB);
     }
 
 
-    @Override
     public void onCheckedChanged(RadioGroup rdgGrupo, int checkedId) {
         // TODO Auto-generated method stub
         if (checkedId == R.id.rbop1){
