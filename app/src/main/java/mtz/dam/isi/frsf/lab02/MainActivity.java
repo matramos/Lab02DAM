@@ -19,10 +19,22 @@ public class MainActivity extends AppCompatActivity {
         rdgGrupo = (RadioGroup)findViewById(R.id.menuradio);
         rdgGrupo.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(RadioGroup radioGroup, @IdRes int i) {
-
+            public void onCheckedChanged(RadioGroup radioGroup, @IdRes int checkedId) {
+                TextView txtRB = (TextView)findViewById(R.id.textRB);
+                switch (checkedId) {
+                    case R.id.plato:
+                        txtRB.setText("plato");
+                        break;
+                    case R.id.postre:
+                        txtRB.setText("postre");
+                        break;
+                    case R.id.bebida:
+                        txtRB.setText("bebida");
+                        break;
+                    default:
+                        txtRB.setText("NONE");
+                }
             }
-
         });
     }
 }

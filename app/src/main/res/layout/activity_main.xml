@@ -51,21 +51,24 @@
         android:layout_height="wrap_content">
 
         <RadioButton
-            android:id="@+id/rbop1"
+            android:id="@+id/plato"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
             android:text="@string/rbopcion1" />
 
         <RadioButton
-            android:id="@+id/rbop2"
+            android:id="@+id/postre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
             android:text="@string/rbopcion2" />
 
         <RadioButton
-            android:id="@+id/rbop3"
+            android:id="@+id/bebida"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
             android:text="@string/rbopcion3" />
     </RadioGroup>
 
