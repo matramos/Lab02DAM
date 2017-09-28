@@ -17,20 +17,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         rdgGrupo = (RadioGroup)findViewById(R.id.menuradio);
-        lblChecked = (TextView)findViewById(R.id.textRB);
+        rdgGrupo.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, @IdRes int i) {
+
+            }
+
+        });
     }
-
-
-    public void onCheckedChanged(RadioGroup rdgGrupo, int checkedId) {
-        // TODO Auto-generated method stub
-        if (checkedId == R.id.rbop1){
-            lblChecked.setText("Ha pulsado el botón 1");
-        }else if (checkedId == R.id.rbop2){
-            lblChecked.setText("Ha pulsado el botón 2");
-        }else if (checkedId == R.id.rbop3){
-            lblChecked.setText("Ha pulsado el botón 3");
-        }
-
-    }
-
 }
