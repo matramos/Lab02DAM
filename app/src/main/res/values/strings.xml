@@ -3,4 +3,6 @@
     <string name="rbopcion1">Plato</string>
     <string name="rbopcion2">Postre</string>
     <string name="rbopcion3">Bebida</string>
+    <string name="toastUnselected">No hay elemento seleccionado</string>
+    <string name="toastPedidoYaConfirmado">No se puede agregar, pedido ya confirmado</string>
 </resources>

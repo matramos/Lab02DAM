@@ -42,7 +42,11 @@
     <TextView
         android:id="@+id/menu"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:maxLines="4"
+        android:minLines="1"
+        android:scrollbars="vertical"
+        android:text="Menu" />
 
     <RadioGroup
         android:id="@+id/menuradio"
