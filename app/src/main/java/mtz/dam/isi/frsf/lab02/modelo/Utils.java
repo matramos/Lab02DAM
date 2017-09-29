@@ -1,4 +1,4 @@
-package mtz.dam.isi.frsf.lab02;
+package mtz.dam.isi.frsf.lab02.modelo;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -32,6 +32,7 @@ public class Utils {
         private Integer id;
         private String nombre;
         private Double precio;
+        private TipoBebida tipo;
 
         public ElementoMenu() {
         }
