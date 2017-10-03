@@ -23,7 +23,7 @@ import java.util.Random;
 
 public class Utils {
     DecimalFormat f = new DecimalFormat("##.00");
-    
+
     private ElementoMenu[] listaBebidas;
     private ElementoMenu[] listaPlatos;
     private ElementoMenu[] listaPostre;
@@ -32,10 +32,8 @@ public class Utils {
         private Integer id;
         private String nombre;
         private Double precio;
-        private TipoBebida tipo;
 
-        public ElementoMenu() {
-        }
+        public ElementoMenu() {}
 
         public ElementoMenu(Integer i, String n, Double p) {
             this.setId(i);
@@ -49,35 +47,15 @@ public class Utils {
             this.precio= (r.nextInt(3)+1)*((r.nextDouble()*100));
         }
 
-
-        public Integer getId() {
-            return id;
-        }
-
-        public void setId(Integer id) {
-            this.id = id;
-        }
-
-        public String getNombre() {
-            return nombre;
-        }
-
-        public void setNombre(String nombre) {
-            this.nombre = nombre;
-        }
-
-        public Double getPrecio() {
-            return precio;
-        }
-
-        public void setPrecio(Double precio) {
-            this.precio = precio;
-        }
+        public Integer getId() {return id;}
+        public void setId(Integer id) {this.id = id;}
+        public String getNombre() {return nombre;}
+        public void setNombre(String nombre) {this.nombre = nombre;}
+        public Double getPrecio() {return precio;}
+        public void setPrecio(Double precio) {this.precio = precio;}
 
         @Override
-        public String toString() {
-            return this.nombre+ "( "+f.format(this.precio)+")";
-        }
+        public String toString() {return this.nombre+ "( "+f.format(this.precio)+")";}
     }
 
     public void iniciarListas(){
@@ -123,19 +101,9 @@ public class Utils {
         listaPostre[12]=new ElementoMenu(13,"IceCreamSandwich");
         listaPostre[13]=new ElementoMenu(14,"Frozen Yougurth");
         listaPostre[14]=new ElementoMenu(15,"Queso y Batata");
-
     }
 
-    public ElementoMenu[] getListaPostre(){
-        return listaPostre;
-    }
-
-    public ElementoMenu[] getListaBebidas(){
-        return listaBebidas;
-    }
-
-    public ElementoMenu[] getListaPlatos(){
-        return listaPlatos;
-    }
-
+    public ElementoMenu[] getListaPostre(){return listaPostre;}
+    public ElementoMenu[] getListaBebidas(){return listaBebidas;}
+    public ElementoMenu[] getListaPlatos(){return listaPlatos;}
 }
