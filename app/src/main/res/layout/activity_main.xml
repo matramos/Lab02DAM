@@ -11,10 +11,11 @@
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Pedite la cena!!" />
+        android:text="Pedite la cena!!"
+        android:textSize="10pt"/>
 
     <ToggleButton
-        android:id="@+id/cena"
+        android:id="@+id/reserva"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Reservar mesa"
@@ -33,7 +34,7 @@
         android:layout_height="wrap_content" />
 
     <Switch
-        android:id="@+id/reserva"
+        android:id="@+id/recordatorio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:checked="false"
@@ -44,9 +45,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:maxLines="4"
-        android:minLines="1"
+        android:minLines="4"
         android:scrollbars="vertical"
-        android:text="Menu" />
+        android:text="MENU:" />
 
     <RadioGroup
         android:id="@+id/menuradio"
@@ -100,16 +101,12 @@
             android:text="Reiniciar" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textRB"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
-
     <ListView
         android:id="@+id/lvelementos"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="invisible" />
+        android:visibility="visible"
+        android:scrollbars="vertical">
+    </ListView>
 
 </LinearLayout>
