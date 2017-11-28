@@ -1,7 +1,9 @@
 package mtz.dam.isi.frsf.lab02.modelo;
 
 
-public class Pedido {
+import java.io.Serializable;
+
+public class Pedido implements Serializable {
     private String nombreCliente;
     private String email;
     private String nombre;
@@ -12,7 +14,8 @@ public class Pedido {
     private Utils.ElementoMenu plato;
     private Utils.ElementoMenu postre;
 
-
+    public Pedido() {
+    }
 
     public Pedido(String nombreCliente, String email, String nombre, Double costo, Boolean esDelivery, String horaEntrega, Utils.ElementoMenu bebida, Utils.ElementoMenu plato, Utils.ElementoMenu postre) {
         this.nombreCliente = nombreCliente;

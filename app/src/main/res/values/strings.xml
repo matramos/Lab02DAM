@@ -14,6 +14,10 @@
     <string name="btn_reiniciar">Reiniciar</string>
     <string name="total">TOTAL: $ %.2f</string>
     <string name="toastUnselected">No hay elemento seleccionado</string>
-    <string name="toastPedidoYaConfirmado">No se puede agregar, pedido ya confirmado</string>
-    <string name="toastPedidoVacio">Debe realizar su pedido antes de confirmar</string>
+    <string name="toastPedidoYaConfirmado">No se puede agregar,\n pedido ya confirmado</string>
+    <string name="toastPedidoVacio">Debe realizar su pedido \n antes de confirmar</string>
+    <string name="toastSelected">Ya tiene un elemento seleccionado \n de este tipo</string>
+    <string name="toastPagado">Pedido pagado con éxito</string>
+    <string name="toastCancelado">Pedido CANCELADO</string>
+    <string name="completarCampos">Uno o mas campos estan vacios</string>
 </resources>
